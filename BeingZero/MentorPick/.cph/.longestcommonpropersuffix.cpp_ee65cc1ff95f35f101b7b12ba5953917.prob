@@ -1,0 +1,1 @@
+{"name":"Local: longestcommonpropersuffix","url":"/home/v/VSCodes/BeingZero/MentorPick/longestcommonpropersuffix.cpp","tests":[{"id":1632190333649,"input":"2\n3\nbeing0 eing0 ing0\n2\nbeing zero","output":"ng0\n-1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/v/VSCodes/BeingZero/MentorPick/longestcommonpropersuffix.cpp","group":"local","local":true}

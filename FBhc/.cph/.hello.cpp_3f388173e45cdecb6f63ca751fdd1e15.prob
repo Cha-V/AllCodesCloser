@@ -1,0 +1,1 @@
+{"name":"Local: hello","url":"/home/v/VSCodes/FBhc/hello.cpp","tests":[{"id":1631438349799,"input":"1 2","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/v/VSCodes/FBhc/hello.cpp","group":"local","local":true}

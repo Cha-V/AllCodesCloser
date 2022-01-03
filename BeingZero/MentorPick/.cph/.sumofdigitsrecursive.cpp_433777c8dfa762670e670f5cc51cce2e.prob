@@ -1,0 +1,1 @@
+{"name":"Local: sumofdigitsrecursive","url":"/home/v/VSCodes/BeingZero/MentorPick/sumofdigitsrecursive.cpp","tests":[{"id":1632796993593,"input":"11\n239","output":"2\n14"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/v/VSCodes/BeingZero/MentorPick/sumofdigitsrecursive.cpp","group":"local","local":true}

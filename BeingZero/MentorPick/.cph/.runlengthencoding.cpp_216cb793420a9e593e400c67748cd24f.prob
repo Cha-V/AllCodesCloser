@@ -1,0 +1,1 @@
+{"name":"Local: runlengthencoding","url":"/home/v/VSCodes/.vscode/MentorPick/runlengthencoding.cpp","tests":[{"id":1631591553961,"input":"3\napple\ncoofee\nbeingzero","output":"ap2le\nco2fe2\nbeingzero"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/v/VSCodes/.vscode/MentorPick/runlengthencoding.cpp","group":"local","local":true}

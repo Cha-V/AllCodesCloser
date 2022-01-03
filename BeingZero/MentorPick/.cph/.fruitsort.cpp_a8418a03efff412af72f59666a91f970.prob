@@ -1,0 +1,1 @@
+{"name":"Local: fruitsort","url":"/home/v/VSCodes/BeingZero/MentorPick/fruitsort.cpp","tests":[{"id":1633409022993,"input":"1\n4\nkiwi fig apple pear","output":"fig kiwi pear apple"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/v/VSCodes/BeingZero/MentorPick/fruitsort.cpp","group":"local","local":true}

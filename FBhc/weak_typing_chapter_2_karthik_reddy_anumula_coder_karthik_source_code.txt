@@ -1,0 +1,97 @@
+package Round1;
+import java.util.*;
+public class A2 
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		for(int k=1;k<=t;k++)
+		{
+			int n=sc.nextInt();
+			String s=sc.next();
+			long[] a=new long[n];
+			long[] b=new long[n];
+			int[] c=new int[n];
+			long count=0,temp=0;
+			int x=0,y=0;
+			long sum=0;
+			for(int i=0;i<n;i++)
+			{
+				if(s.charAt(i)=='X')
+				{
+					if(temp==0)
+					{
+						temp=1;
+						x=i;
+					}
+					else if(temp==-1)
+					{
+						temp=1;
+						count++;
+						for(int j=y+1;j<i;j++)
+						{
+							b[j]=count;
+							c[j]=i-j;
+						}
+					}
+					x=i;
+				}
+				else if(s.charAt(i)=='O')
+				{
+					if(temp==0)
+					{
+						temp=-1;
+						y=i;
+					}
+					else if(temp==1)
+					{
+						temp=-1;
+						count++;
+						for(int j=x+1;j<i;j++)
+						{
+							b[j]=count;
+							c[j]=i-j;
+						}
+						y=i;
+					}
+					else
+					{
+						y=i;
+					}
+				}
+				a[i]=count;
+				sum=sum+a[i];
+			}
+			/*for(int i=0;i<n;i++)
+			{
+				//System.out.println(a[i]+" "+b[i]+" "+c[i]);
+			}*/
+			long tsum=0;
+			for(int i=0;i<n;i++)
+			{
+				if(b[i]!=0)
+				{
+					long temp1=sum-(a[i]*c[i]);
+					int h=i+c[i];
+					h=n-h;
+					long temp2=h*b[i];
+					temp1=temp1-temp2;
+					sum=sum-a[i];
+					tsum=(tsum+temp1)%1000000007;
+				}
+				else 
+				{
+					sum=sum-a[i];
+					long temp1=n-i-1;
+					long temp2=sum-(a[i]*temp1);
+					tsum=(tsum+temp2)%1000000007;
+					
+				}
+				//System.out.print(tsum+" hello "+sum+" he ");
+			}
+			//System.out.println();
+			System.out.println("Case #"+k+": "+tsum);
+		}
+	}
+}
